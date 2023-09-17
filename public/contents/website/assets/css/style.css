@@ -1,0 +1,470 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@700&family=Passions+Conflict&family=Roboto:wght@100;300;400;900&family=Sevillana&family=Tangerine:wght@400;700&display=swap'); 
+
+ /* font-family: 'Open Sans', sans-serif;
+ font-family: 'Oswald', sans-serif;
+ font-family: 'Passions Conflict', cursive;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Sevillana', cursive;
+ font-family: 'Tangerine', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* ======================    Common Css start here ======================= */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-transform: capitalize;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #000;
+}
+ol,ul{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+}
+li{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Google Sans', sans-serif;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.section-padding{
+    padding: 70px 0px !important;
+}
+
+
+
+/* =======================  Common Css end here ======================= */
+
+/* ===================    MAIN CSS START HERRE ================ */
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    background: #106eea;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    color: #fff;
+    padding: 0;
+  }
+  
+  #topbar .contact-info i {
+    font-style: normal;
+    color: #fff;
+  }
+  
+  #topbar .contact-info i a,
+  #topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+  }
+  
+  #topbar .contact-info i a {
+    line-height: 0;
+    transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  #topbar .contact-info i a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  #topbar .social-links a {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 0;
+    transition: 0.3s;
+    margin-left: 20px;
+  }
+  
+  #topbar .social-links a:hover {
+    color: white;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+ 
+/* ===================    MAIN CSS START HERRE ================ */
+
+/* =======  MAIN MENU CSS START HERE =========== */
+.main-menu{
+    position: relative;
+}
+.main-menu ul li {
+    padding: 0px 7px;
+    transition: 0.4s all;
+}
+.main-menu ul li a{
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s all;
+}
+
+.main-menu ul button{
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s all;
+    margin-left: 10px;
+}
+
+.main-menu ul li:hover {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(38,98,156,1) 5%);
+    transition: 0.4s all;
+    border-radius: 5px;
+}
+.main-menu ul li:hover a{
+    color:#fff;
+    font-size: 16px;
+    transition: 0.4s all;
+}
+.header{
+    position: relative;
+
+}
+.sumbenu{
+    z-index: 1020;
+    min-width: 200px;
+    transition: 1s all ;
+    display: none;
+    color: #000;
+   
+}
+
+.main-menu ul li:hover .sumbenu{
+    display: block;
+    position: absolute;
+    transition: 1s all ;
+}
+.sumbenu ul{
+    width: 200px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 0;
+    padding: 0;
+    transition: 1s all ;
+    background: rgb(241, 202, 202);
+}
+.sumbenu ul li{
+    display: block;
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1px dotted #fff;
+    background: #106eea;
+}
+
+.About_service{
+    margin-top: -120px;
+}
+
+.section_over{
+    margin-top: -120px;
+    z-index: 1060 !important;
+}
+
+
+/*============================= Index Banner Slider =============== */
+.main-slider{
+    width: 100%;
+    height: 80vh;
+    background: #000;
+    position: relative;
+}
+.slider-image{
+    height: 80vh;
+    width: 100%;
+    background: red;
+}
+.slider-image img{
+    height:80vh;
+    width: auto;
+ 
+}
+.slider-text{
+    position: absolute;
+    top: 25%;
+}
+.banner-text h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    
+}
+.banner-text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    
+
+}
+.index-banner-slider .owl-nav button.owl-next{
+    padding: 10px!important;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    right: 30px;
+    top: 40%;
+    position: absolute;
+
+}
+
+.index-banner-slider .owl-nav button.owl-prev{
+    padding: 10px!important;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    left: 30px;
+    top: 40%;
+    position: absolute;
+}
+/*============================= Index Banner Slider end =============== */
+
+.what-we h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    
+}
+.what-we h3{
+    font-family: 'Roboto',sans-serif;
+    font-weight:600;
+}
+.whatwedoimage img{
+padding: 150px 0px ;
+border: 10px solid rgb(20, 3, 255);
+}
+/* =========  what we do end here ============== */
+.our-causes{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.huminity-content img{
+    height: 250px;
+    width:250px;
+}
+
+
+.index-causes-slider .owl-nav button.owl-next{
+    padding: 0px!important;
+    color: rgb(252, 8, 8);
+    font-size: 60px;
+    text-align: center;
+    bottom: 2%;
+    right: 40%;
+    position: absolute;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+}
+
+.index-causes-slider .owl-nav button.owl-prev{
+    padding: 0px!important;
+    color: rgb(252, 8, 8);
+    font-size: 60px;
+    text-align: center;
+    bottom: 2%;
+    position: absolute;
+    left: 40%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+}
+
+/* donar area css start heer  */
+
+.donar-image img{
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+.our-donar h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+}
+/* ============ */
+.card_capsul{
+    border-radius: 50%;
+}
+
+#buttonstyle{
+    background:#1d1760;
+    padding:5px 10px;
+    border-radius:20px 0px 20px 0px ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.15) 0px 10px 10px;
+    border:1px solid #fff"
+    transition  035s all ;}   
+
+#buttonstyle:hover{
+    background:#fff;
+    padding:5px 10px;
+    border-radius:0px 20px 0px 20px ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.15) 0px 10px 10px;
+    transition:0.35s all ;
+    border:1px solid green"
+}    
+#buttonstyle a{
+    color:#fff;
+    font-size:18px;
+    padding: 8px 5px ;
+}
+  #buttonstyle:hover a{
+      color:green;
+  }
+/* modal style */
+.modal-body{
+    height: 400px;
+}
+.modal-body:hover{
+    overflow-y: scroll;
+}
+/* book */
+.donar-heading{
+    font-size: 40px;
+    color: #fff;
+    font-size: 'Open Sans';
+    font-weight: 700;
+}
+.handsname, .providername{
+    font-size: 23px;
+    color: #fff;
+    font-size: 'Open Sans';
+    font-weight: 700;
+}
+.providername{
+    font-size: 18px;
+    color: rgb(238, 241, 14);
+    font-size: 'Open Sans';
+    font-weight: 700;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.book {
+	--book-height: 80vh;
+	--book-ratio: 1.4;
+}
+
+.book > div {
+	height: var(--book-height);
+	width: calc(var(--book-height) / var(--book-ratio));
+	overflow: auto;
+	background-color: #0a0a0a;
+	transform: scale(0.9);
+	border-radius: 6px;
+	transform-origin: left;
+}
+
+.book-cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 9;
+	text-align: center;
+	background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+		linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+		linear-gradient(315deg, black 25%, transparent 25%),
+		linear-gradient(45deg, black 25%, transparent 25%);
+	background-size: 2em 2em;
+	background-color: #232323;
+	color: white;
+	transition: transform 2s;
+}
+
+.book-cover::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	background-color: #b11509;
+}
+
+
+.separator {
+	--separator-size: 8px;
+	width: var(--separator-size);
+	height: var(--separator-size);
+	background-color: #dbd75d;
+	margin: 50px auto 60px auto;
+	border-radius: 50%;
+	position: relative;
+}
+
+.separator::after,
+.separator::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	background-color: white;
+	height: 2px;
+	top: calc(50% - 1px);
+}
+
+.separator::after {
+	left: 15px;
+}
+
+.separator::before {
+	right: 15px;
+}
+
+.book-content {
+	transform: scale(0.9) translateY(30px);
+	background-color: white !important;
+	transition: all 0.3s 1s;
+}
+
+.book-content h3,
+.book-content p {
+	opacity: 0;
+	transition: all 0.3s 0.3s;
+}
+
+.book-cover > div {
+	transition: opacity 0s 0.6s;
+}
+
+.book:hover > .book-cover {
+	transform: rotateY(180deg) scale(0.9);
+}
+
+.book:hover > .book-cover > div {
+	opacity: 0;
+}
+
+.book:hover > .book-content {
+	transform: scale(0.9) translateY(0px);
+}
+
+.book:hover > .book-content h3,
+.book:hover > .book-content p {
+	opacity: 1;
+}
+
+
